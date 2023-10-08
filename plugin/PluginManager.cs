@@ -1,6 +1,8 @@
 ﻿using AimRobot.Api.command;
+using AimRobot.Api.config;
 using AimRobot.Api.events;
 using AimRobot.Api.events.ev;
+using System.Data;
 using System.Reflection;
 using System.Text;
 using static AimRobot.Api.command.ICommandListener;
@@ -58,6 +60,17 @@ namespace AimRobot.Api.plugin {
         public abstract PluginBase GetPlugin(string pluginName);
 
         public abstract ISet<PluginBase> GetPlugins();
+
+        /// <summary>
+        /// <para>根据插件生成一个的数据读写集（Config）并返回，数据读写集抽象为类似于Map的KV形式。</para>
+        /// <para>可以使用ConfigAutoSave方法来让ARL自动托管并在合适的时候将数据集自动保存</para>
+        /// </summary>
+        /// <param name="plugin"></param>
+        /// <param name="datasetName"></param>
+        /// <returns></returns>
+        public abstract AutoSaveConfig GetDefaultAutoSaveConfig(PluginBase plugin, string datasetName);
+
+        public abstract void ConfigAutoSave<K, V>(IDataset<K, V> config);
 
     }
 }

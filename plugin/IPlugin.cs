@@ -24,7 +24,7 @@ namespace AimRobot.Api.plugin {
         Version GetVersion();
 
         /// <summary>
-        /// 插件的名字，ARL将会显示该信息，也是和其它插件区分的关键标志
+        /// 插件的名字，ARL将会显示该信息，也是和其它插件区分的关键标志。建议仅用英文字母组成以避免不必要的问题
         /// </summary>
         /// <returns></returns>
         string GetPluginName();

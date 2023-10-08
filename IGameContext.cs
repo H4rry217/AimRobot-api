@@ -51,7 +51,9 @@ namespace AimRobot.Api {
         /// <para>添加反作弊策略，可以实现IAntiCheat并调用本方法传递一个反作弊策略</para>
         /// </summary>
         /// <param name="antiCheat"></param>
-        void AddAntiCheat(IAntiCheat antiCheat);
+        void RegisterAntiCheat(IAntiCheat antiCheat);
+
+        void UnregisterAntiCheat(IAntiCheat antiCheat);
 
         /// <summary>
         /// 检测该玩家的数据情况，如是否作弊

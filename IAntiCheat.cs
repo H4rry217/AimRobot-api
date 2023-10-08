@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AimRobot.Api {
 
     /// <summary>
-    /// 反作弊的策略。如ARL会时刻检测玩家并传递名字、PlayerId至所有反作弊策略类
+    /// 反作弊的策略。如ARL会时刻检测玩家并传递名字、PlayerId至所有反作弊策略对象
     /// </summary>
     public interface IAntiCheat {
 
