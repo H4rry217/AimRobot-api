@@ -15,5 +15,9 @@ namespace AimRobot.Api.config {
 
         public VType GetData(KType key);
 
+        public bool hasData(KType key);
+
+        public int GetSize(KType key);
+
     }
 }

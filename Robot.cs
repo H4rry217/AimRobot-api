@@ -16,6 +16,16 @@ namespace AimRobot.Api {
 
         public abstract void BanPlayer(string name, string reason);
 
+        public abstract void KickPlayer(long playerId);
+
+        public abstract void KickPlayer(string name);
+
+        public abstract void KickPlayer(string name, string reason);
+
+        public abstract void UnBanPlayer(long playerId);
+
+        public abstract void UnBanPlayer(string name);
+
         public abstract void SendChat(string message);
 
         public abstract bool IsEnable();
