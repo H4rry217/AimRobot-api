@@ -28,6 +28,8 @@ namespace AimRobot.Api {
 
         public abstract void SendChat(string message);
 
+        public abstract void JoinGame(long gameId);
+
         public abstract bool IsEnable();
 
         /// <summary>

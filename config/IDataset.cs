@@ -19,5 +19,7 @@ namespace AimRobot.Api.config {
 
         public int GetSize(KType key);
 
+        public KType[] GetKeys();
+
     }
 }

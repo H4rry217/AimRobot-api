@@ -67,5 +67,9 @@ namespace AimRobot.Api {
         /// <param name="playerName"></param>
         void PlayerCheck(string  playerName);
 
+        void SetEnable(bool state);
+
+        bool IsEnable();
+
     }
 }

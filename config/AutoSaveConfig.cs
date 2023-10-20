@@ -19,6 +19,8 @@ namespace AimRobot.Api.config {
 
         public abstract FileInfo GetFile();
 
+        public abstract string[] GetKeys();
+
         public abstract int GetSize(string key);
 
         public abstract bool hasData(string key);
