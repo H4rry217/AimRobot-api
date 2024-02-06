@@ -50,6 +50,8 @@ namespace AimRobot.Api {
         /// <returns></returns>
         public abstract string GetDirectory();
 
+        public abstract IConnection GetConnection();
+
         public abstract PluginManager GetPluginManager();
 
         /// <summary>
